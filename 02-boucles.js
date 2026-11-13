@@ -8,8 +8,11 @@
  * @example compterJusqua(5) → affiche 1, 2, 3, 4, 5
  */
 export const compterJusqua = (n) => {
-  // à compléter
+  for (let i = 1; i <= n; i++) {
+    console.log(i)
+  }
 }
+
 
 /**
  * Affiche uniquement les nombres pairs de 1 à n dans la console.
@@ -18,7 +21,11 @@ export const compterJusqua = (n) => {
  * @example afficherPairs(8) → affiche 2, 4, 6, 8
  */
 export const afficherPairs = (n) => {
-  // à compléter
+ for (let i = 1; i <= n; i++) {
+    if (i % 2 === 0) {
+      console.log(i)
+    }
+  } 
 }
 
 /**
@@ -29,7 +36,11 @@ export const afficherPairs = (n) => {
  * @example somme(5) → 15  (1+2+3+4+5)
  */
 export const somme = (n) => {
-  // à compléter
+  let total = 0
+  for (let i = 1; i <= n; i++) {
+    total += i
+  }
+  return total
 }
 
 /**
@@ -41,7 +52,11 @@ export const somme = (n) => {
  * @example produit(0) → 1
  */
 export const produit = (n) => {
-  // à compléter
+  let resultat = 1
+  for (let i = 1; i <= n; i++) {
+    resultat *= i
+  }
+  return resultat
 }
 
 /**
@@ -53,7 +68,13 @@ export const produit = (n) => {
  * @example compterPairs(7)  → 3
  */
 export const compterPairs = (n) => {
-  // à compléter
+  let count = 0
+  for (let i = 1; i <= n; i++) {
+    if (i % 2 === 0) {
+      count++
+    }
+  }
+  return count
 }
 
 /**
@@ -65,7 +86,11 @@ export const compterPairs = (n) => {
  * @example table(0) → []
  */
 export const table = (n) => {
-  // à compléter
+  const result = []
+  for (let i = 1; i <= n; i++) {
+    result.push(n * i)
+  }
+  return result
 }
 
 /**
@@ -78,7 +103,11 @@ export const table = (n) => {
  * @example multiplesJusqua(7, 20) → [7, 14]
  */
 export const multiplesJusqua = (n, limite) => {
-  // à compléter
+  const result = []
+  for (let i = n; i <= limite; i += n) {
+    result.push(i)
+  }
+  return result
 }
 
 /**
