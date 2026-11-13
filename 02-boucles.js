@@ -7,6 +7,13 @@
  * @param {number} n
  * @example compterJusqua(5) → affiche 1, 2, 3, 4, 5
  */
+/*DÉBUT 
+Fonction compterJusqua(n)
+    POUR i allant de 1 À n FAIRE
+        AFFICHER i
+    FIN POUR
+FIN*/
+
 export const compterJusqua = (n) => {
   for (let i = 1; i <= n; i++) {
     console.log(i)
@@ -20,6 +27,15 @@ export const compterJusqua = (n) => {
  * @param {number} n
  * @example afficherPairs(8) → affiche 2, 4, 6, 8
  */
+/*DÉBUT 
+Fonction afficherPairs(n)
+    POUR i allant de 1 À n FAIRE
+        SI i est pair ALORS
+            AFFICHER i
+        FIN SI
+    FIN POUR
+FIN*/
+
 export const afficherPairs = (n) => {
  for (let i = 1; i <= n; i++) {
     if (i % 2 === 0) {
@@ -35,6 +51,15 @@ export const afficherPairs = (n) => {
  * @returns {number}
  * @example somme(5) → 15  (1+2+3+4+5)
  */
+/*DÉBUT 
+Fonction somme(n)
+    INITIALISER total à 0
+    POUR i allant de 1 À n FAIRE
+        total prend la valeur total + i
+    FIN POUR
+    RETOURNER total
+FIN*/
+
 export const somme = (n) => {
   let total = 0
   for (let i = 1; i <= n; i++) {
@@ -51,6 +76,15 @@ export const somme = (n) => {
  * @example produit(5) → 120  (1×2×3×4×5)
  * @example produit(0) → 1
  */
+/*DÉBUT 
+Fonction produit(n)
+    INITIALISER resultat à 1
+    POUR i allant de 1 À n FAIRE
+        resultat prend la valeur resultat * i
+    FIN POUR
+    RETOURNER resultat
+FIN*/
+
 export const produit = (n) => {
   let resultat = 1
   for (let i = 1; i <= n; i++) {
@@ -67,6 +101,17 @@ export const produit = (n) => {
  * @example compterPairs(10) → 5
  * @example compterPairs(7)  → 3
  */
+/*DÉBUT 
+Fonction compterPairs(n)
+    INITIALISER count à 0
+    POUR i allant de 1 À n FAIRE
+        SI i est pair ALORS
+            count prend la valeur count + 1
+        FIN SI
+    FIN POUR
+    RETOURNER count
+FIN*/
+
 export const compterPairs = (n) => {
   let count = 0
   for (let i = 1; i <= n; i++) {
@@ -85,6 +130,15 @@ export const compterPairs = (n) => {
  * @example table(3) → [3, 6, 9]
  * @example table(0) → []
  */
+/*DÉBUT 
+Fonction table(n)
+    INITIALISER result comme un tableau vide
+    POUR i allant de 1 À n FAIRE
+        ajouter (n * i) dans result
+    FIN POUR
+    RETOURNER result
+FIN*/
+
 export const table = (n) => {
   const result = []
   for (let i = 1; i <= n; i++) {
@@ -102,6 +156,15 @@ export const table = (n) => {
  * @example multiplesJusqua(3, 12) → [3, 6, 9, 12]
  * @example multiplesJusqua(7, 20) → [7, 14]
  */
+/*DÉBUT 
+Fonction multiplesJusqua(n, limite)
+    INITIALISER result comme un tableau vide
+    POUR i allant de n À limite avec un pas de n FAIRE
+        ajouter i dans result
+    FIN POUR
+    RETOURNER result
+FIN*/
+
 export const multiplesJusqua = (n, limite) => {
   const result = []
   for (let i = n; i <= limite; i += n) {

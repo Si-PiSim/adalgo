@@ -8,6 +8,17 @@
  * @returns {number}
  * @example maximum([3, 7, 2, 9, 1]) → 9
  */
+/*DÉBUT 
+Fonction maximum(tableau)
+    INITIALISER max avec le premier élément du tableau
+    POUR i allant de 1 À la taille du tableau - 1 FAIRE
+        SI l'élément du tableau à l'indice i est supérieur à max ALORS
+            max prend la valeur de cet élément
+        FIN SI
+    FIN POUR
+    RETOURNER max
+FIN*/
+
 export const maximum = (tableau) => {
   let max = tableau[0]
   for (let i = 1; i < tableau.length; i++) {
@@ -24,6 +35,17 @@ export const maximum = (tableau) => {
  * @returns {number}
  * @example minimum([3, 7, 2, 9, 1]) → 1
  */
+/*DÉBUT 
+Fonction minimum(tableau)
+    INITIALISER min avec le premier élément du tableau
+    POUR i allant de 1 À la taille du tableau - 1 FAIRE
+        SI l'élément du tableau à l'indice i est inférieur à min ALORS
+            min prend la valeur de cet élément
+        FIN SI
+    FIN POUR
+    RETOURNER min
+FIN*/
+
 export const minimum = (tableau) => {
   let min = tableau[0]
   for (let i = 1; i < tableau.length; i++) {
@@ -40,6 +62,18 @@ export const minimum = (tableau) => {
  * @returns {number|null}
  * @example moyenne([2, 4, 6]) → 4 / moyenne([]) → null
  */
+/*DÉBUT 
+Fonction moyenne(tableau)
+    SI la taille du tableau est égale à 0 ALORS
+        RETOURNER NUL
+    FIN SI
+    INITIALISER somme à 0
+    POUR i allant de 0 À la taille du tableau - 1 FAIRE
+        somme prend la valeur somme + l'élément à l'indice i
+    FIN POUR
+    RETOURNER somme divisée par la taille du tableau
+FIN*/
+
 export const moyenne = (tableau) => {
   if (tableau.length === 0) {
     return null
@@ -59,6 +93,16 @@ export const moyenne = (tableau) => {
  * @returns {boolean}
  * @example contient([1, 2, 3], 2) → true / contient([1, 2, 3], 5) → false
  */
+/*DÉBUT 
+Fonction contient(tableau, valeur)
+    POUR i allant de 0 À la taille du tableau - 1 FAIRE
+        SI l'élément à l'indice i est égal à valeur ALORS
+            RETOURNER VRAI
+        FIN SI
+    FIN POUR
+    RETOURNER FAUX
+FIN*/
+
 export const contient = (tableau, valeur) => {
   for (let i = 0; i < tableau.length; i++) {
     if (tableau[i] === valeur) {
@@ -75,6 +119,17 @@ export const contient = (tableau, valeur) => {
  * @returns {number}
  * @example compter([1, 2, 2, 3, 2], 2) → 3
  */
+/*DÉBUT 
+Fonction compter(tableau, valeur)
+    INITIALISER compteur à 0
+    POUR i allant de 0 À la taille du tableau - 1 FAIRE
+        SI l'élément à l'indice i est égal à valeur ALORS
+            compteur prend la valeur compteur + 1
+        FIN SI
+    FIN POUR
+    RETOURNER compteur
+FIN*/
+
 export const compter = (tableau, valeur) => {
   let compteur = 0
   for (let i = 0; i < tableau.length; i++) {
@@ -93,6 +148,14 @@ export const compter = (tableau, valeur) => {
  * @returns {any[]}
  * @example inverser([1, 2, 3]) → [3, 2, 1]
  */
+/*DÉBUT Fonction inverser(tableau)
+    INITIALISER resultat comme un tableau vide
+    POUR i allant de la taille du tableau - 1 JUSQU'À 0 avec un pas de -1 FAIRE
+        ajouter l'élément du tableau à l'indice i dans resultat
+    FIN POUR
+    RETOURNER resultat
+FIN*/
+
 export const inverser = (tableau) => {
   const resultat = []
   for (let i = tableau.length - 1; i >= 0; i--) {

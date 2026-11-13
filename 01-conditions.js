@@ -8,6 +8,16 @@
  * @returns {boolean}
  * @example estPositif(5) → true / estPositif(-3) → false
  */
+
+/*DÉBUT 
+Fonction estPositif(n)
+    SI n est supérieur ou égal à 0 ALORS
+        RETOURNER VRAI
+    SINON
+        RETOURNER FAUX
+    FIN SI
+FIN*/
+
 export const estPositif = (n) => {
   if (n >= 0) {
     return true;
@@ -22,7 +32,15 @@ export const estPositif = (n) => {
  * @param {number} n
  * @returns {boolean}
  * @example estPair(4) → true / estPair(7) → false
- */
+  */
+/*DÉBUT 
+Fonction estPair(n)
+    SI le reste de n divisé par 2 est égal à 0 ALORS
+        RETOURNER VRAI
+    SINON
+        RETOURNER FAUX
+    FIN SI
+FIN */
 export const estPair = (n) => {
   if (n %2 ===0){
     return true;
@@ -39,6 +57,15 @@ export const estPair = (n) => {
  * @returns {number}
  * @example max(3, 7) → 7
  */
+
+/*DÉBUT 
+Fonction max(a, b)
+    SI a est supérieur à b ALORS
+        RETOURNER a
+    SINON
+        RETOURNER b
+    FIN SI
+FIN */
 export const max = (a, b) => {
   if (a > b) {
     return a;
@@ -56,6 +83,21 @@ export const max = (a, b) => {
  * @returns {string}
  * @example mention(17) → "Très bien"
  */
+/*DÉBUT 
+Fonction mention(note)
+    SI note est supérieur ou égal à 16 ALORS
+        RETOURNER "Très bien"
+    SINON SI note est supérieur ou égal à 14 ALORS
+        RETOURNER "Bien"
+    SINON SI note est supérieur ou égal à 12 ALORS
+        RETOURNER "Assez bien"
+    SINON SI note est supérieur ou égal à 10 ALORS
+        RETOURNER "Passable"
+    SINON
+        RETOURNER "Insuffisant"
+    FIN SI
+FIN*/
+
 export const mention = (note) => {
   if (note >= 16) {
     return "Très bien";
@@ -78,6 +120,19 @@ export const mention = (note) => {
  * @returns {string}
  * @example fizzbuzz(15) → "FizzBuzz"
  */
+/*DÉBUT 
+Fonction fizzbuzz(n)
+    SI n est divisible par 3 ET n est divisible par 5 ALORS
+        RETOURNER "FizzBuzz"
+    SINON SI n est divisible par 3 ALORS
+        RETOURNER "Fizz"
+    SINON SI n est divisible par 5 ALORS
+        RETOURNER "Buzz"
+    SINON
+        RETOURNER n converti en chaîne de caractères
+    FIN SI
+FIN*/
+
 export const fizzbuzz = (n) => {
 if (n % 3 === 0 && n % 5 === 0) {
     return "FizzBuzz";
